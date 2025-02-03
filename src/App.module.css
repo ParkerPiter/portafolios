@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1, h2, h3, h4, p, span {
+  font-family: "Montserrat", serif;
+}
+
+/*Colores*/
+:root{
+  --naranja: #ff8000;
+  --azul: #0833a2;
+  --morado: #2a1150;
+  --blanco: #ffffff;
+  --negro: #000;
+}
+
+body{
+  background-color: var(--morado);
+}
+
+.app{
+  padding: 2%;
+}
+
+.header{
+  color: var(--blanco);
+  text-align: center;
+}
+
+.image{
+  margin: 1% 0;
+  border-radius: 50%;
+  width: 15%;
+  border: 10px solid var(--naranja);
+}
+
+.nav{
+  display: flex;
+  justify-content:center;
+  margin: 1% 0;
+}
+
+.icons{
+  margin: 0 1.5%;
+  font-size: 48px;
+  color: var(--naranja);
+}
+
+.titles{
+  color: var(--blanco);
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  border: none;
+  font-family: "Montserrat", serif;
+  padding: 10px 20px;
+  color: var(--naranja);
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.tabs .activeTab {
+  color: var(--blanco);
+  border-bottom: 2px solid var(--blanco);
+}
+.buttonsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.buttons{
+  background-color: var(--naranja);
+  border: none;
+  font-family: "Montserrat", serif;
+  border-radius: 25px;
+  padding: 1% 8%;
+  color: var(--azul);
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.buttons:hover{
+  cursor: pointer;
+  background-color: var(--blanco);
+  color: var(--naranja);
+}
+
+.contactSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 2% 0;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0%;
+}
+.contact p {
+  color: var(--blanco);
+  font-weight: 500;
+}
+
+.icon{
+  color: var(--naranja);
+  font-size: 24px;
+}
+
+.sobreMi {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.sobreMiTitle {
+  text-align: center;
+  width: 100%;
+  color: var(--blanco);
+}
+
+.sobreMiText {
+  flex: 1;
+}
+
+.technologiesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
