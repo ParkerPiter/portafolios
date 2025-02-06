@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import photo from './assets/1677603369334.jpg';
 import styles from './App.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faWhatsapp, faReact, faJsSquare, faHtml5, faCss3Alt, faNodeJs, faGit} from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import mongo from './assets/mongodb-original-wordmark.svg'
 import mysql from './assets/mysql-original-wordmark.svg'
