@@ -14,7 +14,6 @@ import html from './assets/file-type-html.svg'
 import css from './assets/file-type-css.svg'
 import js from './assets/javascript-js.svg'
 import react from './assets/react.svg'
-import git from './assets/git.svg'
 import node from './assets/node-js.svg'
 import wp from './assets/wordpress.svg'
 
