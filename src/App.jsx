@@ -3,7 +3,7 @@ import photo from './assets/1677603369334.jpg';
 import styles from './App.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faFile } from '@fortawesome/free-solid-svg-icons';
 import mongo from './assets/mongodb-original-wordmark.svg'
 import mysql from './assets/mysql-original-wordmark.svg'
 import postgre from './assets/postgresql-icon-1987x2048-v2fkmdaw.png'
@@ -64,7 +64,11 @@ function App() {
               <p>+54 1123900802</p>
             </div>
             <div className={styles.contact}>
-              <a href="https://w.app/16dwej"><FontAwesomeIcon className={styles.wa} icon={faWhatsapp} /></a>
+              <FontAwesomeIcon icon={faFile} className={styles.wa} />
+              <a href="https://drive.google.com/file/d/1NDWAGLTw5v3TN4jLu3chDARyMgfu1Hmm/view" target="_blank" rel="noopener noreferrer"><p>Curriculum Vitae</p></a>
+            </div>
+            <div className={styles.contact}>
+              <a className={styles.mail} href="https://w.app/16dwej"><FontAwesomeIcon className={styles.wa} icon={faWhatsapp} /></a>
             </div>
           </section>
         )}
