@@ -40,9 +40,12 @@ function App() {
           <section>
             <h2 className={styles.titles}>Proyectos</h2>
             <div className={styles.buttonsContainer}>
+              <a className={styles.buttons} href="https://www.kleep.com/#/campaign-home" target="_blank" rel="noopener noreferrer">Kleep</a>
+              <a className={styles.buttons} href="https://brighter.reduxstaging.com/" target="_blank" rel="noopener noreferrer">Brighter Horizons</a>
+              <a className={styles.buttons} href="https://intelipay.com.ve/" target="_blank" rel="noopener noreferrer">Intelipay</a>
               <a className={styles.buttons} href="https://zio-pagos.netlify.app/" target="_blank" rel="noopener noreferrer">Zio Pagos</a>
-              <a className={styles.buttons} href="https://intelitect.netlify.app/" target="_blank" rel="noopener noreferrer">Intelitec</a>
-              <a className={styles.buttons} href="https://intelisport.netlify.app/" target="_blank" rel="noopener noreferrer">Intesport</a>
+              <a className={styles.buttons} href="https://intelitec.intelipay.com.ve/" target="_blank" rel="noopener noreferrer">Intelitec</a>
+              <a className={styles.buttons} href="https://intelisport.us/" target="_blank" rel="noopener noreferrer">Intesport</a>
               <a className={styles.buttons} href="https://notes-manager-test.netlify.app/" target="_blank" rel="noopener noreferrer">Task Manager</a>
               <a className={styles.buttons} href="https://poke-news.netlify.app/" target="_blank" rel="noopener noreferrer">Poke News</a>
               <a className={styles.buttons} href="https://resonant-moxie-76fc5f.netlify.app/" target="_blank" rel="noopener noreferrer">Consultoria Penal</a>
