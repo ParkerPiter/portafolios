@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import photo from './assets/1677603369334.jpg';
+import photo from './assets/photo_5053154591864106546_y.jpg';
 import styles from './App.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
