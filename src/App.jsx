@@ -71,7 +71,7 @@ function App() {
               <a className={styles.mail} href="https://drive.google.com/file/d/1NDWAGLTw5v3TN4jLu3chDARyMgfu1Hmm/view" target="_blank" rel="noopener noreferrer"><p>Curriculum Vitae</p></a>
             </div>
             <div className={styles.contact}>
-              <a className={styles.mail} href="https://w.app/16dwej"><FontAwesomeIcon className={styles.wa} icon={faWhatsapp} /></a>
+              <a className={styles.mail} href="https://wa.me/+5491123900802"><FontAwesomeIcon className={styles.wa} icon={faWhatsapp} /></a>
             </div>
           </section>
         )}
