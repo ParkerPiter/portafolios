@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import 'animate.css';
 import photo from './assets/photo_5053154591864106546_y.jpg';
 import styles from './App.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -40,6 +41,7 @@ function App() {
           <section>
             <h2 className={styles.titles}>Proyectos</h2>
             <div className={styles.buttonsContainer}>
+              <a className={styles.buttons} href="https://velasquezfinancialgroup.com/" target="_blank" rel="noopener noreferrer">Velasquez Financial</a>
               <a className={styles.buttons} href="https://www.kleep.com/#/campaign-home" target="_blank" rel="noopener noreferrer">Kleep</a>
               <a className={styles.buttons} href="https://brighter.reduxstaging.com/" target="_blank" rel="noopener noreferrer">Brighter Horizons</a>
               <a className={styles.buttons} href="https://intelipay.com.ve/" target="_blank" rel="noopener noreferrer">Intelipay</a>
