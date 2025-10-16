@@ -72,7 +72,7 @@ function App() {
             </div>
             <div className={styles.contact}>
               <FontAwesomeIcon icon={faFile} className={styles.wa} />
-              <a className={styles.mail} href="https://drive.google.com/file/d/1NDWAGLTw5v3TN4jLu3chDARyMgfu1Hmm/view" target="_blank" rel="noopener noreferrer"><p>Curriculum Vitae</p></a>
+              <a className={styles.mail} href="https://drive.google.com/file/d/1O2Zh2Mw2VpCkAd5XdgnEswNTc-aAXHFa/view?usp=sharing" target="_blank" rel="noopener noreferrer"><p>Curriculum Vitae</p></a>
             </div>
             <div className={styles.contact}>
               <a className={styles.mail} href="https://wa.me/+5491123900802"><FontAwesomeIcon className={styles.wa} icon={faWhatsapp} /></a>
