@@ -41,6 +41,7 @@ function App() {
           <section>
             <h2 className={styles.titles}>Proyectos</h2>
             <div className={styles.buttonsContainer}>
+              <a className={styles.buttons} href="https://greenhug.com/" target="_blank" rel="noopener noreferrer">Greenhug</a>
               <a className={styles.buttons} href="https://app.impulsum.io/" target="_blank" rel="noopener noreferrer">Impulsum</a>
               <a className={styles.buttons} href="https://calistenia360.fit/" target="_blank" rel="noopener noreferrer">Calistenia 360</a>
               <a className={styles.buttons} href="https://velasquezfinancialgroup.com/" target="_blank" rel="noopener noreferrer">Velasquez Financial</a>
