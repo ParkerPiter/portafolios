@@ -46,7 +46,8 @@ function App() {
               <a className={styles.buttons} href="https://calistenia360.fit/" target="_blank" rel="noopener noreferrer">Calistenia 360</a>
               <a className={styles.buttons} href="https://velasquezfinancialgroup.com/" target="_blank" rel="noopener noreferrer">Velasquez Financial</a>
               {/* <a className={styles.buttons} href="https://www.kleep.com/#/campaign-home" target="_blank" rel="noopener noreferrer">Kleep</a> */}
-              <a className={styles.buttons} href="https://intelisport.us/" target="_blank" rel="noopener noreferrer">Intesport</a>
+              <a className={styles.buttons} href="https://intelisport.us/" target="_blank" rel="noopener noreferrer">Intelisport</a>
+              <a className={styles.buttons} href="https://www.inteligensa.com/" target="_blank" rel="noopener noreferrer">Inteligensa</a>
               <a className={styles.buttons} href="https://tiendae3.intelipay.com.ve/" target="_blank" rel="noopener noreferrer">Estaciones de Energia</a>
               <a className={styles.buttons} href="https://intelipay.com.ve/" target="_blank" rel="noopener noreferrer">Intelipay</a>
               <a className={styles.buttons} href="https://zio-pagos.netlify.app/" target="_blank" rel="noopener noreferrer">Zio Pagos</a>
