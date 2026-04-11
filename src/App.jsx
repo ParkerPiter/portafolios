@@ -41,6 +41,7 @@ function App() {
           <section>
             <h2 className={styles.titles}>Proyectos</h2>
             <div className={styles.buttonsContainer}>
+              <a className={styles.buttons} href="https://clinicanutrapiel.cl/" target="_blank" rel="noopener noreferrer">Clinica Estética NutraPiel</a>
               <a className={styles.buttons} href="https://app.gopadel.ai/" target="_blank" rel="noopener noreferrer">GoPadel</a>
               <a className={styles.buttons} href="https://greenhug.com/" target="_blank" rel="noopener noreferrer">Greenhug</a>
               <a className={styles.buttons} href="https://app.impulsum.io/" target="_blank" rel="noopener noreferrer">Impulsum</a>
