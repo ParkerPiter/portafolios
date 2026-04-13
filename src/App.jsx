@@ -87,9 +87,9 @@ function App() {
           <section className={styles.sobreMi}>
             <h2 className={styles.sobreMiTitle}>Sobre Mi</h2>
             <div className={styles.sobreMiText}>
-              <p>Un placer en saludarte, soy un <strong>Desarrollador Full Stack Jr</strong>, Venezolano de 24 años que actualmente reside en <strong>CABA, Argentina</strong>; Tengo desde mis 17 años estudiando Desarrollo Web con tecnologías como Wordpress, HTML, CSS y JavaScript. Tambien curse hasta 6to semestre la carrera de Ingeniería en Sistemas donde aprendí lenguajes como C y C++, por asuntos personales tuve que congelar la carrera.</p>
-              <p>He sido mayormente un autodidacta de la programación haciendo cursos en plataformas como Udemy y tambien saqué una certificación de parte de soy Henry que me ayudo a guiarme en el camino del Full Stack, de ahi en adelante he estudiado y practicado más por mi cuenta, tambien he participado en voluntariados y proyectos como Freelancer en plataformas como Upwork.</p>
-              <p>Tengo más de un año de experiencia laboral en roles como Desarrollador Web y Desarrollador Frontend y actualmente busco seguir formandome como Desarrollador para pulir más mis habilidades y seguir creciendo tanto de manera laboral como tambien para mi vida cotidiana.</p>
+              <p>¡Hola! Soy Gabriel Leal, Desarrollador Full Stack e Integrador de IA con más de 4 años de experiencia construyendo soluciones digitales escalables.</p>
+              <p>Mi enfoque va más allá del código: me especializo en transformar necesidades de negocio en plataformas robustas utilizando el ecosistema JavaScript (React, Next.js, Node.js) y automatización avanzada con IA (n8n). He liderado el desarrollo de CRMs personalizados y aplicaciones SaaS para clientes en EE. UU. y Latinoamérica, optimizando flujos de trabajo mediante agentes de IA y arquitecturas modernas en Supabase y PostgreSQL.</p>
+              <p>Combino mi formación en Ingeniería de Sistemas con una mentalidad autodidacta y proactiva para resolver desafíos técnicos complejos, siempre con el foco puesto en el rendimiento y la experiencia del usuario.</p>
             </div>
             <div className={styles.tecnoContainer}>
               <h3 className={styles.technologiesTitle}>Tecnologías que uso</h3>
