@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
+import { useTranslation } from 'react-i18next';
 import 'animate.css';
 import photo from './assets/photo_5053154591864106546_y.jpg';
 import styles from './App.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPhone, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faFile, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import mongo from './assets/mongodb-original-wordmark.svg'
 import mysql from './assets/mysql-original-wordmark.svg'
 import postgre from './assets/postgresql-icon-1987x2048-v2fkmdaw.png'
@@ -20,12 +21,24 @@ import wp from './assets/wordpress.svg'
 
 function App() {
   const [selectedTab, setSelectedTab] = useState('proyectos');
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language === 'es' ? 'en' : 'es');
+  };
 
   return (
     <div className={styles.app}>
       <header className={styles.header}>
-        <h1>Portafolios Gabriel Leal</h1>
-        <img className={styles.image} src={photo} alt="#photo" />
+        <button
+          className={styles.languageButton}
+          onClick={toggleLanguage}
+          aria-label={t('language.toggleAriaLabel')}
+        >
+          <FontAwesomeIcon icon={faGlobe} /> {t('language.toggle')}
+        </button>
+        <h1>{t('header.title')}</h1>
+        <img className={styles.image} src={photo} alt={t('header.photoAlt')} />
         <nav className={styles.nav}>
           <a className={styles.icons} href="https://www.linkedin.com/in/gabriel-lea-n/"><FontAwesomeIcon  icon={faLinkedin} /></a>
           <a className={styles.icons} href="https://github.com/ParkerPiter"><FontAwesomeIcon  icon={faGithub} /></a>
@@ -33,15 +46,15 @@ function App() {
       </header>
       <main>
       <div className={styles.tabs}>
-          <button className={selectedTab === 'proyectos' ? styles.activeTab : ''} onClick={() => setSelectedTab('proyectos')}>Proyectos</button>
-          <button className={selectedTab === 'contacto' ? styles.activeTab : ''} onClick={() => setSelectedTab('contacto')}>Contacto</button>
-          <button className={selectedTab === 'sobre mi' ? styles.activeTab : ''} onClick={() => setSelectedTab('sobre mi')}>Sobre Mi</button>
+          <button className={selectedTab === 'proyectos' ? styles.activeTab : ''} onClick={() => setSelectedTab('proyectos')}>{t('tabs.projects')}</button>
+          <button className={selectedTab === 'contacto' ? styles.activeTab : ''} onClick={() => setSelectedTab('contacto')}>{t('tabs.contact')}</button>
+          <button className={selectedTab === 'sobre mi' ? styles.activeTab : ''} onClick={() => setSelectedTab('sobre mi')}>{t('tabs.about')}</button>
         </div>
         {selectedTab === 'proyectos' && (
           <section>
-            <h2 className={styles.titles}>Proyectos</h2>
+            <h2 className={styles.titles}>{t('projects.title')}</h2>
             <div className={styles.buttonsContainer}>
-              <a className={styles.buttons} href="https://clinicanutrapiel.cl/" target="_blank" rel="noopener noreferrer">Clinica Estética NutraPiel</a>
+              <a className={styles.buttons} href="https://clinicanutrapiel.cl/" target="_blank" rel="noopener noreferrer">{t('projects.nutrapiel')}</a>
               <a className={styles.buttons} href="https://app.gopadel.ai/" target="_blank" rel="noopener noreferrer">GoPadel</a>
               <a className={styles.buttons} href="https://greenhug.com/" target="_blank" rel="noopener noreferrer">Greenhug</a>
               <a className={styles.buttons} href="https://app.impulsum.io/" target="_blank" rel="noopener noreferrer">Impulsum</a>
@@ -50,7 +63,7 @@ function App() {
               {/* <a className={styles.buttons} href="https://www.kleep.com/#/campaign-home" target="_blank" rel="noopener noreferrer">Kleep</a> */}
               <a className={styles.buttons} href="https://intelisport.us/" target="_blank" rel="noopener noreferrer">Intelisport</a>
               <a className={styles.buttons} href="https://www.inteligensa.com/" target="_blank" rel="noopener noreferrer">Inteligensa</a>
-              <a className={styles.buttons} href="https://tiendae3.intelipay.com.ve/" target="_blank" rel="noopener noreferrer">Estaciones de Energia</a>
+              <a className={styles.buttons} href="https://tiendae3.intelipay.com.ve/" target="_blank" rel="noopener noreferrer">{t('projects.energyStations')}</a>
               <a className={styles.buttons} href="https://intelipay.com.ve/" target="_blank" rel="noopener noreferrer">Intelipay</a>
               <a className={styles.buttons} href="https://zio-pagos.netlify.app/" target="_blank" rel="noopener noreferrer">Zio Pagos</a>
               <a className={styles.buttons} href="https://intelitec.intelipay.com.ve/" target="_blank" rel="noopener noreferrer">Intelitec</a>
@@ -65,7 +78,7 @@ function App() {
         )}
         {selectedTab === 'contacto' && (
           <section className={styles.contactSection}>
-            <h2 className={styles.titles}>Contacto</h2>
+            <h2 className={styles.titles}>{t('contact.title')}</h2>
             <div className={styles.contact}>
               <FontAwesomeIcon className={styles.icon} icon={faEnvelope} />
               <a className={styles.mail} href="mailto:gabriel.leal.n1@gmail.com"><p>gabriel.leal.n1@gmail.com</p></a>
@@ -76,7 +89,7 @@ function App() {
             </div>
             <div className={styles.contact}>
               <FontAwesomeIcon icon={faFile} className={styles.wa} />
-              <a className={styles.mail} href="https://drive.google.com/file/d/1fWPZxHBwl8ejsUxgX1_FXCD90nNIQa9I/view?usp=sharing" target="_blank" rel="noopener noreferrer"><p>Curriculum Vitae</p></a>
+              <a className={styles.mail} href="https://drive.google.com/file/d/1fWPZxHBwl8ejsUxgX1_FXCD90nNIQa9I/view?usp=sharing" target="_blank" rel="noopener noreferrer"><p>{t('contact.cv')}</p></a>
             </div>
             <div className={styles.contact}>
               <a className={styles.mail} href="https://wa.me/+5491123900802"><FontAwesomeIcon className={styles.wa} icon={faWhatsapp} /></a>
@@ -85,14 +98,14 @@ function App() {
         )}
         {selectedTab === 'sobre mi' && (
           <section className={styles.sobreMi}>
-            <h2 className={styles.sobreMiTitle}>Sobre Mi</h2>
+            <h2 className={styles.sobreMiTitle}>{t('about.title')}</h2>
             <div className={styles.sobreMiText}>
-              <p>¡Hola! Soy Gabriel Leal, Desarrollador Full Stack e Integrador de IA con más de 4 años de experiencia construyendo soluciones digitales escalables.</p>
-              <p>Mi enfoque va más allá del código: me especializo en transformar necesidades de negocio en plataformas robustas utilizando el ecosistema JavaScript (React, Next.js, Node.js) y automatización avanzada con IA (n8n). He liderado el desarrollo de CRMs personalizados y aplicaciones SaaS para clientes en EE. UU. y Latinoamérica, optimizando flujos de trabajo mediante agentes de IA y arquitecturas modernas en Supabase y PostgreSQL.</p>
-              <p>Combino mi formación en Ingeniería de Sistemas con una mentalidad autodidacta y proactiva para resolver desafíos técnicos complejos, siempre con el foco puesto en el rendimiento y la experiencia del usuario.</p>
+              <p>{t('about.p1')}</p>
+              <p>{t('about.p2')}</p>
+              <p>{t('about.p3')}</p>
             </div>
             <div className={styles.tecnoContainer}>
-              <h3 className={styles.technologiesTitle}>Tecnologías que uso</h3>
+              <h3 className={styles.technologiesTitle}>{t('about.technologies')}</h3>
               <div className={styles.technologiesGrid}>
                 <img src={html} alt="#html" />
                 <img src={css} alt="#css" />

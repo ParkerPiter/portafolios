@@ -27,6 +27,26 @@ body{
   text-align: center;
 }
 
+.languageButton{
+  display: block;
+  margin-left: auto;
+  font-family: "Montserrat", serif;
+  background-color: transparent;
+  border: 2px solid var(--naranja);
+  border-radius: 25px;
+  padding: 8px 18px;
+  color: var(--naranja);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.languageButton:hover{
+  background-color: var(--naranja);
+  color: var(--morado);
+}
+
 .image{
   margin: 1% 0;
   border-radius: 50%;
@@ -220,5 +240,10 @@ body{
 
   .image{
     width: 180px;
+  }
+
+  .languageButton{
+    font-size: 13px;
+    padding: 6px 14px;
   }
 }
