@@ -89,7 +89,7 @@ function App() {
             </div>
             <div className={styles.contact}>
               <FontAwesomeIcon icon={faFile} className={styles.wa} />
-              <a className={styles.mail} href="https://drive.google.com/file/d/1fWPZxHBwl8ejsUxgX1_FXCD90nNIQa9I/view?usp=sharing" target="_blank" rel="noopener noreferrer"><p>{t('contact.cv')}</p></a>
+              <a className={styles.mail} href="https://drive.google.com/file/d/1TUj5VXHj9Ia4cEMPfywy7SNFC5SsfoeW/view?usp=sharing" target="_blank" rel="noopener noreferrer"><p>{t('contact.cv')}</p></a>
             </div>
             <div className={styles.contact}>
               <a className={styles.mail} href="https://wa.me/+5491123900802"><FontAwesomeIcon className={styles.wa} icon={faWhatsapp} /></a>
