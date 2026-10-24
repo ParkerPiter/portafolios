@@ -57,18 +57,17 @@ function App() {
               <a className={styles.buttons} href="https://clinicanutrapiel.cl/" target="_blank" rel="noopener noreferrer">{t('projects.nutrapiel')}</a>
               <a className={styles.buttons} href="https://app.gopadel.ai/" target="_blank" rel="noopener noreferrer">GoPadel</a>
               <a className={styles.buttons} href="https://greenhug.com/" target="_blank" rel="noopener noreferrer">Greenhug</a>
-              <a className={styles.buttons} href="https://app.impulsum.io/" target="_blank" rel="noopener noreferrer">Impulsum</a>
-              <a className={styles.buttons} href="https://calistenia360.fit/" target="_blank" rel="noopener noreferrer">Calistenia 360</a>
+              {/* <a className={styles.buttons} href="https://app.impulsum.io/" target="_blank" rel="noopener noreferrer">Impulsum</a>
+              <a className={styles.buttons} href="https://calistenia360.fit/" target="_blank" rel="noopener noreferrer">Calistenia 360</a> */}
               <a className={styles.buttons} href="https://velasquezfinancialgroup.com/" target="_blank" rel="noopener noreferrer">Velasquez Financial</a>
               {/* <a className={styles.buttons} href="https://www.kleep.com/#/campaign-home" target="_blank" rel="noopener noreferrer">Kleep</a> */}
               <a className={styles.buttons} href="https://intelisport.us/" target="_blank" rel="noopener noreferrer">Intelisport</a>
               <a className={styles.buttons} href="https://www.inteligensa.com/" target="_blank" rel="noopener noreferrer">Inteligensa</a>
-              <a className={styles.buttons} href="https://tiendae3.intelipay.com.ve/" target="_blank" rel="noopener noreferrer">{t('projects.energyStations')}</a>
-              <a className={styles.buttons} href="https://intelipay.com.ve/" target="_blank" rel="noopener noreferrer">Intelipay</a>
+              <a className={styles.buttons} href="https://intelipunto.com/" target="_blank" rel="noopener noreferrer">Intelipunto</a>
               <a className={styles.buttons} href="https://zio-pagos.netlify.app/" target="_blank" rel="noopener noreferrer">Zio Pagos</a>
-              <a className={styles.buttons} href="https://intelitec.intelipay.com.ve/" target="_blank" rel="noopener noreferrer">Intelitec</a>
+              <a className={styles.buttons} href="https://intelitec.online/" target="_blank" rel="noopener noreferrer">Intelitec</a>
               <a className={styles.buttons} href="https://poke-news.netlify.app/" target="_blank" rel="noopener noreferrer">Poke News</a>
-              <a className={styles.buttons} href="https://legendary-stroopwafel-2630e1.netlify.app/" target="_blank" rel="noopener noreferrer">Sound Next</a>
+              {/* <a className={styles.buttons} href="https://legendary-stroopwafel-2630e1.netlify.app/" target="_blank" rel="noopener noreferrer">Sound Next</a> */}
               {/* <a className={styles.buttons} href="https://notes-manager-test.netlify.app/" target="_blank" rel="noopener noreferrer">Task Manager</a>
               <a className={styles.buttons} href="https://resonant-moxie-76fc5f.netlify.app/" target="_blank" rel="noopener noreferrer">Consultoria Penal</a>
               <a className={styles.buttons} href="https://coffee-blog-proyecto.netlify.app/" target="_blank" rel="noopener noreferrer">Coffe Blog</a> */}
