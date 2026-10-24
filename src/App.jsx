@@ -54,6 +54,8 @@ function App() {
           <section>
             <h2 className={styles.titles}>{t('projects.title')}</h2>
             <div className={styles.buttonsContainer}>
+              <a className={styles.buttons} href="https://expoquinceanera.com/" target="_blank" rel="noopener noreferrer">Expo Quinceanera</a>
+              <a className={styles.buttons} href="https://jaxyed.com/" target="_blank" rel="noopener noreferrer">Jaxyed</a>
               <a className={styles.buttons} href="https://clinicanutrapiel.cl/" target="_blank" rel="noopener noreferrer">{t('projects.nutrapiel')}</a>
               <a className={styles.buttons} href="https://app.gopadel.ai/" target="_blank" rel="noopener noreferrer">GoPadel</a>
               <a className={styles.buttons} href="https://greenhug.com/" target="_blank" rel="noopener noreferrer">Greenhug</a>
